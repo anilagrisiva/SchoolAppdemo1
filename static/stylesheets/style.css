@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+.addclass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.school-name {
+    color: aquamarine;
+}
+.main-html-container {
+    background-image: url("https://wallpapercave.com/wp/4i1cfI3.jpg");
+    min-height: 100vh;
+}
+
+.nav-container {
+    background-color: #009999;
+    width: 100%;
+}
+
+.side-card1 {
+    padding: 15px;
+    color: #ffffff;
+    width: 40%;
+}
+
+.image {
+    height: 50px;
+    width: 60px;
+    border-radius: 20px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.scrlo-container {
+    max-height: 70vh;
+    overflow: scroll;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    padding: 15px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.side-card2 {
+    padding: 10px;
+    color: #ffffff;
+    width: 40%;
+}
+
+.line {
+    border-style: solid;
+    border-color: #ffffff;
+    width: 80%;
+}
+
+.end-bar {
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    height: 5vh;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.email {
+    text-align: center;
+}
+.manage{
+    height: 25vw;
+    align-self: center;
+}
+.manages{
+    display: flex;
+    flex-direction: column;
+}
+.anil{
+    color: #ffffff;
+}
+.Home{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+.backtohome{
+    display: flex;
+    justify-content: flex-end;
+}
+@media screen and (max-width:576px) {
+    .main-html-container {
+        background-image: url("https://wallpapercave.com/wp/4i1cfI3.jpg");
+        min-height: 100vh;
+    }
+}

@@ -1,0 +1,12 @@
+{% load static %}
+<html>
+<body class="main-html-container">
+<form method="POST">
+<table>
+{{ form.as_table }}
+</table>
+<button type="submit">save</button>
+ {% csrf_token %}
+ </form>
+</body>
+</html>

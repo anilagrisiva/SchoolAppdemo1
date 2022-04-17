@@ -1,0 +1,54 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        {% load static %}
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="{% static "stylesheets/style.css" %}"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        </head>
+
+        <body>
+            <div class="main-html-container total-color">
+                <div>
+                    <nav class="navbar navbar-expand-lg navbar-light nav-container">
+                        <a class="navbar-brand" href="#"><img class="image" style="height: 50px; width: 60px; border-radius: 20px;" src="https://s3.wp.wsu.edu/uploads/sites/609/2018/12/circuit-board-1188x792.jpg" /></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <h1>Please Fill the bellow Details</h1>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="school-name">
+                    <h1 style="text-align:center;"><SPAN style="font-size:60px; color:yellow;">C</SPAN>OOL <SPAN style="font-size:60px; color:yellow;">T</SPAN>ECH SERIES</h1>
+                </div>
+                <div class="Home1 manages anil addclass" style="">
+                    <p class="">Fill the below details correctly</p>
+                    <div>
+                        <form method="POST">
+                        <table>
+                        {{ form.as_table }}
+                        </table>
+                        <button class="btn btn-success"  type="submit">Submit</button>
+                         {% csrf_token %}
+                        </form>
+                    </div>
+                    <h5 style="color:green;">You will recive a messag to your respective given mobile and gmail contains id and password.</h5>
+                    <h4 style="color:red;">Don't share with anybody for security purpose</h4>
+                </div>
+                <div class="backtohome">
+                                <a href="/"><button class="btn btn-primary"  >Home</button></a>
+                </div>
+            </div>
+          </body>
+        </html>
