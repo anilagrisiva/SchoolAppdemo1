@@ -68,7 +68,7 @@ def addNewAdmision(request):
 
 
 
-@login_required
+
 def admisuccess(request):
     return render(request,'admissions/status-page.html')
 
