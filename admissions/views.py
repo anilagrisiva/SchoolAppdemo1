@@ -22,7 +22,7 @@ def sendsms(a,b):
     message2 = b
     number = a
 
-    no1="sender_id=TXTIND&message=Welcome to CoolTech your id and password is "
+    no1="sender_id=TXTIND&message=Welcome to CoolTechSeries your id and password is "
     no2=str(message)
     no5=" and "
     no6=str(message2)
@@ -77,7 +77,6 @@ def admisuccess(request):
 class addNewTeacher(View):
     def get(self,request):
         return HttpResponse("<h1>this is Class Based View</h1>")
-
 
 
 class getStaffDetails(ListView):
