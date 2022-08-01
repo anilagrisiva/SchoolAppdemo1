@@ -6,7 +6,7 @@ from admissions.models import StaffList,Students
 from django.urls import reverse_lazy
 from datetime import datetime
 from django.contrib.auth.decorators import login_required
-import requests
+#import requests
 
 # Create your views here.
 
