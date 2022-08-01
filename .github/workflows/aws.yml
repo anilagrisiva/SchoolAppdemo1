@@ -17,5 +17,5 @@ jobs:
         AWS_S3_BUCKET: ${{ mynew-s3 }}
         AWS_ACCESS_KEY_ID: ${{ AKIA5XCVWSBULG64EZ7S }}
         AWS_SECRET_ACCESS_KEY: ${{ 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 }}
-        AWS_REGION: 'ap-south-1'   # optional: defaults to us-east-1
+        #AWS_REGION: 'ap-south-1'   # optional: defaults to us-east-1
         #SOURCE_DIR: 'public'      # optional: defaults to entire repository
