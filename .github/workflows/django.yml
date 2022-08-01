@@ -23,8 +23,8 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install Dependencies
       run: |
-        apt-get install -y python3-venv
-        source .venv/bin/activate
+        sudo apt-get install -y python3-venv
+        sudo source .venv/bin/activate
         python -m pip install --upgrade pip
         pip install -r requirements.txt | true
     - name: Run Tests
