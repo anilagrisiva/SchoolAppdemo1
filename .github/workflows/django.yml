@@ -21,8 +21,9 @@ jobs:
         architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
     - name: Run Tests
       run: |
-       python my_script.py
        python manage.py test
       # python manage.py runserver 127.0.0.1:8081
+      
+      #python my_script.py
 
     
