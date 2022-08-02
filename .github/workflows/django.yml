@@ -19,10 +19,9 @@ jobs:
       with:
         python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
         architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
-    - name: Run Tests
-      run: |
-       python manage.py test
-      # python manage.py runserver 127.0.0.1:8081
+    - run: |
+        python manage.py test
+    # python manage.py runserver 127.0.0.1:8081
       
       #python my_script.py
 
