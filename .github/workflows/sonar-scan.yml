@@ -15,4 +15,5 @@ jobs:
       uses: actions/checkout@master
     
     - name: check pull request
-      run: echo {{pull_request_id}}
+      run: echo "::set-output name=pull_request_number::$(gh pr view --json number -q .number || echo "")"
+
