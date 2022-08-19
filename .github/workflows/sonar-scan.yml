@@ -6,7 +6,7 @@ on:
     types: [opened, synchronize, reopened]
 
 env:
-  PR_NUMBER: ${{ github.event.number }}
+  PR_NUMBER: anil
 
 name: SonarQube Scan
 jobs:
@@ -19,6 +19,8 @@ jobs:
     
     - name: check pull request
       run: echo "::set-output name=pull_request_number::$(gh pr view --json number -q .number || echo "")"
+      env:
+        GH_TOKEN: ${{ secrets.GIT_TOCKEN }}
 
     - name: print
       run: echo $PR_NUMBER
